@@ -1,8 +1,6 @@
 from bot_client import bot
-from dispatcher import Dispatcher
+from dispatcher import dp
 import asyncio
-
-dp = Dispatcher()
 
 async def main():
     await dp.start_polling(bot)
